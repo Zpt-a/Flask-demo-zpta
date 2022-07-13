@@ -1,14 +1,15 @@
 # coding: utf-8
 # author: zpta
 
-from flask import Flask, url_for
+from flask import url_for
 
 from manage import app
 
 
 @app.route('/login')
 def login():
-    return 'login'
+    # return 'login'
+    return '<p>login</p>'
 
 
 @app.route('/user/<username>')
